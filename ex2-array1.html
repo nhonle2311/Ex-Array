@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<div id="result"></div>
+<body>
+    <script>
+        let interArray = [4,5,10,23,55,11,2,54,8,7];
+        let maxInterArray = Math.max(...interArray)
+        let maxIndex = interArray.indexOf(maxInterArray);
+        let resultArray = document.getElementById('result');
+        resultArray.innerText = "giá trị lớn nhất là:" + maxInterArray +"phần tử số" +maxIndex;
+
+    </script>
+</body>
+</html>
