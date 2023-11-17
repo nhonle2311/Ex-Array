@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let character = ["Viết","một", "chương", "trình", "khai", "báo", "một", "mảng", "ký", "tự", "và", "kích", "thước", "của", "mảng"];
+        function countCharacter(arrayCharacter) {
+            let count = 0;
+            for (let i = 0; i < arrayCharacter.length; i++) {
+                count += arrayCharacter[i].length;
+            }
+            document.write(`${count}`);
+        }
+        countCharacter(character);
+
+    </script>
+</body>
+</html>

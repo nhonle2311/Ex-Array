@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // Khởi tạo mảng 2 chiều
+        let mang2Chieu = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+
+        // In ra các phần tử trong mảng 2 chiều
+        for (let i = 0; i < mang2Chieu.length; i++) {
+            for (let j = 0; j < mang2Chieu[i].length; j++) {
+                document.write(` "row + column" "" [${i}][${j}] = ${mang2Chieu[i][j]} <br>`);
+            }
+            document.write('<br>')
+        }
+    </script>
+</body>
+</html>

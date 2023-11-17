@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <form>
+        <div>
+            <label for="chain1">Chain1</label>
+            <input type="text" id="chain1" value=""/>
+        </div>
+        <div>
+            <label for="chain2">Chain2</label>
+            <input type="text" id="chain2" value=""/>
+        </div>
+        <div>
+            <button onclick="seeChain()">Compare</button>
+        </div>
+        <div id="result"></div>
+    </form>
+<body>
+    <script>
+        function seeChain(){
+            let chain1 = document.getElementById('chain1').value;
+            let chain2 = document.getElementById('chain2').value;
+            let resultElement = document.getElementById('result');
+            if (chain1 === chain2){
+                resultElement.innerHTML='đây là chuỗi trùng nhau';
+            }else {
+                resultElement.innerHTML='đây không là chuỗi trùng nhau'
+            }
+        }
+
+    </script>
+</body>
+</html>

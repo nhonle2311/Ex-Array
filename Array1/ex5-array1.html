@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let inputString = "This is a string with some negative numbers: -5, 10, -3, 8, -1,-23,6";
+        let numberInputString = inputString.match(/-?\d+/g);
+        let negativeArray = numberInputString.filter(number => number < 0);
+        if (negativeArray.length > 0 ) {
+            document.write(`các số âm trong chuỗi là: ${negativeArray}`);
+        }else {
+            document.write('không có số âm trong chuỗi');
+        }
+    </script>
+</body>
+</html>

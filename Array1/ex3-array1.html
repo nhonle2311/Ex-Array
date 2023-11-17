@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let interArray = [30,2,4,11,6];
+        let maxInterArray = Math.max(...interArray);
+        let sum = interArray.reduce((sumInterArray, a) => sumInterArray + a, 0)
+        let avg = sum / interArray.length;
+        document.write(`phần tử lớn nhất là:${maxInterArray} <br> giá trị trung bình là ${avg}`);
+    </script>
+</body>
+</html>
