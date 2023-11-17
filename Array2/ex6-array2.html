@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <div>
+        <label for="chain">Chain1</label>
+        <input type="text" id="chain" value=""/>
+    </div>
+    <div>
+        <button type="button" onclick="swapChain()">Swap</button>
+    </div>
+    <div id="result"></div>
+    <script>
+      function swapChain() {
+          let chain = document.getElementById('chain').value;
+          let resultChain = document.getElementById('result');
+          let replaceChain = chain.replace(/-/g, '_');
+          resultChain.innerText = `${replaceChain}`;
+      }
+        
+    </script>
+</form>
+</body>
+</html>
